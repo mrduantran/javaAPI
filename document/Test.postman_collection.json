@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "cfb1f464-5f40-4c36-bb2e-552cb153fa41",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5620287"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"kai\",\n    \"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "encryptData",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2OTAzMDE3NjYsInVzZXJuYW1lIjoia2FpIn0.gLPv3rGqwqzh24avvuokuftnmQbZFylIFeHOrFIDUTg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"trong\",\n    \"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/encryptData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"encryptData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User RSA",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2OTAzMDE3NjYsInVzZXJuYW1lIjoia2FpIn0.gLPv3rGqwqzh24avvuokuftnmQbZFylIFeHOrFIDUTg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "Yv5xhxfWEr3fdjXc7GdjjWeWKYKIMN3g4ZVSGIt4bqFc+LFkPKfzF1cWCJO9r96giI9dAEYUfyeFbPrB3yr9j6OQkn/YZoA3rqm6xYOrzbcLt0OBUNuSR84H3PDBVp64+SlWL94/WTXudzAWGWkORqJg00Gz1fd9e7PjIak4FVFYIEhBN1eXwY2odMky0DkJGkGPDsyR2sh2O5bJDz6ExNxHocJYzhnO268RHdgSOe7IO9RZuuEGJx79T47qFl9O/NjiMlQ37n0Sm0EAq4Q2pxrdvHkPNL3+t2cBOgmC7wNoxyEjODswS5ITiziOZvcMm31lOQBmU6yO3sFh3+hNpg==",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Lst User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0OTYyMzcsInVzZXJuYW1lIjoic2VuYSJ9.PQwsXuufdnZ24olQ8UtM0Iga4Qz5Wytc7yYMm71CmvQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/rest/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
